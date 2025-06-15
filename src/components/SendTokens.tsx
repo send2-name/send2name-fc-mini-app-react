@@ -7,6 +7,14 @@ import chains from '../data/chains.json';
 import tokens from '../data/tokens.json';
 import ConnectButton from './ConnectButton';
 
+type TokenAddresses = {
+  [key: string]: string;
+};
+
+type Tokens = {
+  [chainId: number]: TokenAddresses;
+};
+
 export const SendTokens = () => {
   const { address, isConnected } = useAccount();
   const { data: walletClient } = useWalletClient();
@@ -28,8 +36,8 @@ export const SendTokens = () => {
 
   const { data: balance } = useBalance({
     address,
-    token: selectedToken && tokens[chainId]?.[selectedToken] !== '0x0' 
-      ? tokens[chainId][selectedToken] as `0x${string}`
+    token: selectedToken && chainId && (tokens as Tokens)[chainId]?.[selectedToken] !== '0x0' 
+      ? (tokens as Tokens)[chainId][selectedToken] as `0x${string}`
       : undefined,
   });
 
@@ -107,9 +115,9 @@ export const SendTokens = () => {
       setReceiverAddress(holder);
 
       if (tokens[chainId][selectedToken] === '0x0') {
-        await sendNativeTokens(holder);
+        await sendNativeTokens(holder as `0x${string}`);
       } else {
-        await sendErc20Tokens(holder);
+        await sendErc20Tokens(holder as `0x${string}`);
       }
     } catch (error) {
       console.error(error);
@@ -118,11 +126,11 @@ export const SendTokens = () => {
     }
   };
 
-  const sendErc20Tokens = async (holder: string) => {
-    if (!address || !walletClient || !publicClient) return;
+  const sendErc20Tokens = async (holder: `0x${string}`) => {
+    if (!address || !walletClient || !publicClient || !chainId) return;
 
     try {
-      const tokenAddress = tokens[chainId][selectedToken] as `0x${string}`;
+      const tokenAddress = (tokens as Tokens)[chainId][selectedToken] as `0x${string}`;
       const valueWei = parseUnits(tokenAmount, selectedTokenDecimals);
 
       const { request } = await publicClient.simulateContract({
@@ -152,8 +160,8 @@ export const SendTokens = () => {
     }
   };
 
-  const sendNativeTokens = async (holder: string) => {
-    if (!address || !walletClient) return;
+  const sendNativeTokens = async (holder: `0x${string}`) => {
+    if (!address || !walletClient || !publicClient) return;
 
     try {
       const valueWei = parseEther(tokenAmount);
@@ -161,6 +169,9 @@ export const SendTokens = () => {
       const hash = await walletClient.sendTransaction({
         to: holder,
         value: valueWei,
+        kzg: undefined,
+        account: address,
+        chain: publicClient.chain
       });
 
       setStatus('Transaction submitted. Waiting for confirmation...');
@@ -221,7 +232,12 @@ export const SendTokens = () => {
                         className="dropdown-item py-2" 
                         type="button"
                         style={{ fontSize: '1.1rem' }}
-                        onClick={() => switchChain({ chainId: chains.find(c => c.name === networkName)?.id })}
+                        onClick={() => {
+                          const chain = chains.find(c => c.name === networkName);
+                          if (chain?.id) {
+                            switchChain({ chainId: chain.id as any });
+                          }
+                        }}
                       >
                         Switch to {networkName}
                       </button>
