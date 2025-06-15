@@ -1,0 +1,135 @@
+[
+  {
+    "id": 1,
+    "name": "Ethereum",
+    "nativeCurrency": "ETH",
+    "blockExplorer": "https://etherscan.io",
+    "rpc": "https://rpc.ankr.com/eth"
+  },
+  {
+    "id": 10,
+    "name": "Optimism",
+    "nativeCurrency": "ETH",
+    "blockExplorer": "https://optimistic.etherscan.io",
+    "rpc": "https://rpc.ankr.com/optimism"
+  },
+  {
+    "id": 14,
+    "name": "Flare",
+    "nativeCurrency": "FLR",
+    "blockExplorer": "https://flare-explorer.flare.network",
+    "rpc": "https://flare-api.flare.network/ext/C/rpc"
+  },
+  {
+    "id": 16,
+    "name": "Coston Testnet",
+    "nativeCurrency": "CFLR",
+    "blockExplorer": "https://coston-explorer.flare.network",
+    "rpc": "https://coston-api.flare.network/ext/C/rpc"
+  },
+  {
+    "id": 19,
+    "name": "Songbird",
+    "nativeCurrency": "SGB",
+    "blockExplorer": "https://songbird-explorer.flare.network",
+    "rpc": "https://songbird-api.flare.network/ext/C/rpc"
+  },
+  {
+    "id": 56,
+    "name": "BNB Smart Chain",
+    "nativeCurrency": "BNB",
+    "blockExplorer": "https://bscscan.com",
+    "rpc": "https://rpc.ankr.com/bsc"
+  },
+  {
+    "id": 100,
+    "name": "Gnosis Chain",
+    "nativeCurrency": "XDAI",
+    "blockExplorer": "https://gnosisscan.io",
+    "rpc": "https://rpc.ankr.com/gnosis"
+  },
+  {
+    "id": 137,
+    "name": "Polygon",
+    "nativeCurrency": "POL",
+    "blockExplorer": "https://polygonscan.com",
+    "rpc": "https://polygon-rpc.com"
+  },
+  {
+    "id": 250,
+    "name": "Fantom",
+    "nativeCurrency": "FTM",
+    "blockExplorer": "https://ftmscan.com",
+    "rpc": "https://rpc.ankr.com/fantom"
+  },
+  {
+    "id": 8453,
+    "name": "Base",
+    "nativeCurrency": "ETH",
+    "blockExplorer": "https://basescan.org",
+    "rpc": "https://mainnet.base.org"
+  },
+  {
+    "id": 34443,
+    "name": "Mode",
+    "nativeCurrency": "ETH",
+    "blockExplorer": "https://explorer.mode.network",
+    "rpc": "https://mainnet.mode.network"
+  },
+  {
+    "id": 42161,
+    "name": "Arbitrum",
+    "nativeCurrency": "ETH",
+    "blockExplorer": "https://arbiscan.io",
+    "rpc": "https://rpc.ankr.com/arbitrum"
+  },
+  {
+    "id": 42170,
+    "name": "Arbitrum Nova",
+    "nativeCurrency": "ETH",
+    "blockExplorer": "https://nova.arbiscan.io",
+    "rpc": "https://arbitrum-nova.public.blastapi.io"
+  },
+  {
+    "id": 42766,
+    "name": "ZKFair",
+    "nativeCurrency": "USDC",
+    "blockExplorer": "https://scan.zkfair.io",
+    "rpc": "https://rpc.zkfair.io"
+  },
+  {
+    "id": 55244,
+    "name": "Superposition",
+    "nativeCurrency": "ETH",
+    "blockExplorer": "https://explorer.superposition.so",
+    "rpc": "https://rpc.superposition.so"
+  },
+  {
+    "id": 666666666,
+    "name": "Degen",
+    "nativeCurrency": "DEGEN",
+    "blockExplorer": "https://explorer.degen.tips",
+    "rpc": "https://rpc.degen.tips"
+  },
+  {
+    "id": 7777777,
+    "name": "Zora",
+    "nativeCurrency": "ETH",
+    "blockExplorer": "https://explorer.zora.energy/",
+    "rpc": "https://rpc.zora.energy"
+  },
+  {
+    "id": 81457,
+    "name": "Blast",
+    "nativeCurrency": "ETH",
+    "blockExplorer": "https://blastscan.io",
+    "rpc": "https://rpc.blast.io"
+  },
+  {
+    "id": 534352,
+    "name": "Scroll",
+    "nativeCurrency": "ETH",
+    "blockExplorer": "https://scrollscan.com",
+    "rpc": "https://rpc.scroll.io"
+  }
+]

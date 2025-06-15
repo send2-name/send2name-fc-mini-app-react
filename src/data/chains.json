@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "name": "Ethereum",
+    "nativeCurrency": "ETH",
+    "blockExplorer": "https://etherscan.io"
+  },
+  {
+    "id": 10,
+    "name": "Optimism",
+    "nativeCurrency": "ETH",
+    "blockExplorer": "https://optimistic.etherscan.io"
+  },
+  {
+    "id": 137,
+    "name": "Polygon",
+    "nativeCurrency": "POL",
+    "blockExplorer": "https://polygonscan.com"
+  },
+  {
+    "id": 8453,
+    "name": "Base",
+    "nativeCurrency": "ETH",
+    "blockExplorer": "https://basescan.org"
+  },
+  {
+    "id": 42161,
+    "name": "Arbitrum",
+    "nativeCurrency": "ETH",
+    "blockExplorer": "https://arbiscan.io"
+  },
+  {
+    "id": 7777777,
+    "name": "Zora",
+    "nativeCurrency": "ETH",
+    "blockExplorer": "https://explorer.zora.energy"
+  }
+]

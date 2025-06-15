@@ -1,0 +1,44 @@
+@import "./bootstrap.css";
+
+#balance {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+#balance:hover {
+  text-decoration: none;
+}
+
+.balances-card, .send-tokens-card {
+  width: 500px;
+  margin-top: 25px;
+}
+
+.card-img-wallet:hover {
+  opacity: 0.5;
+}
+
+.card-img-wallet:active {
+  transform: scale(0.8);
+}
+
+.custom-close {
+  filter: brightness(0) invert(1);
+}
+
+.navbar-img {
+  height: 26px;
+}
+
+.set-cursor-pointer {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .balances-card, .send-tokens-card {
+    width: 100%;
+    margin: 5px;
+    margin-top: 15px;
+  }
+}

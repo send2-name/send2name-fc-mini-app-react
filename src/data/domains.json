@@ -1,0 +1,218 @@
+{
+  ".alnova": {
+    "chainId": 42170,
+    "address": "0x4087fb91A1fBdef05761C02714335D232a2Bf3a1",
+    "protocol": "PD"
+  },
+  ".alscroll": {
+    "chainId": 534352,
+    "address": "0x4087fb91A1fBdef05761C02714335D232a2Bf3a1",
+    "protocol": "PD"
+  },
+  ".ape": {
+    "chainId": 137,
+    "address": "0x794a8390D94E32b086908D2bA9D66300aA163C62",
+    "protocol": "PD"
+  },
+  ".arbi": {
+    "chainId": 42161,
+    "address": "0xe97456E0fB121F65422F43ccbd4A07a0e269B534",
+    "protocol": "PD"
+  },
+  ".arbitrum": {
+    "chainId": 42161,
+    "address": "0x337EB5061943ECd247649d58D35Dbab0b40D67E0",
+    "protocol": "PD"
+  },
+  ".basebook": {
+    "chainId": 8453,
+    "address": "0x4087fb91A1fBdef05761C02714335D232a2Bf3a1",
+    "protocol": "PD"
+  },
+  ".based": {
+    "chainId": 8453,
+    "address": "0x273dB54929d8392c1997Be361Da89D41af202a49",
+    "protocol": "PD"
+  },
+  ".basepunk": {
+    "chainId": 8453,
+    "address": "0xc2C543D39426bfd1dB66bBde2Dd9E4a5c7212876",
+    "protocol": "PD"
+  },
+  ".basin": {
+    "chainId": 137,
+    "address": "0x4bF5A99eA2F8De061f7D77BA9edd749503D945Da",
+    "protocol": "PD"
+  },
+  ".bitcoin": {
+    "chainId": 1,
+    "protocol": "UD"
+  },
+  ".blockchain": {
+    "chainId": 1,
+    "protocol": "UD"
+  },
+  ".crypto": {
+    "chainId": 1,
+    "protocol": "UD"
+  },
+  ".dao": {
+    "chainId": 1,
+    "protocol": "UD"
+  },
+  ".degen": {
+    "chainId": 666666666,
+    "address": "0x4087fb91A1fBdef05761C02714335D232a2Bf3a1",
+    "protocol": "PD"
+  },
+  ".dope": {
+    "chainId": 10,
+    "address": "0x1d33989185AA79a3B9173bC7B1137E527C6A262b",
+    "protocol": "PD"
+  },
+  ".eth": {
+    "chainId": 1,
+    "protocol": "ENS"
+  },
+  ".fairchat": {
+    "chainId": 42766,
+    "address": "0x4087fb91A1fBdef05761C02714335D232a2Bf3a1",
+    "protocol": "PD"
+  },
+  ".fantom": {
+    "chainId": 250,
+    "address": "0xbdacf94ddcab51c39c2dd50bffee60bb8021949a",
+    "protocol": "PD"
+  },
+  ".flr": {
+    "chainId": 14,
+    "address": "0xBDACF94dDCAB51c39c2dD50BffEe60Bb8021949a",
+    "protocol": "PD"
+  },
+  ".giveth": {
+    "chainId": 100,
+    "address": "0xEEa3e593CDAf9D18780f9D58BAD142AF6Bd9522a",
+    "protocol": "PD"
+  },
+  ".gnosis": {
+    "chainId": 100,
+    "address": "0xC3E8922657686EC63eaaa9FC1Fe06826802e7e0f",
+    "protocol": "PD"
+  },
+  ".huwa": {
+    "chainId": 56,
+    "address": "0xeFBE0b46649B7A0F1e1D49CCa98aD9CF6bcFB096",
+    "protocol": "PD"
+  },
+  ".klima": {
+    "chainId": 137,
+    "address": "0xe8b97542A433e7eCc7bB791872af04DF02A1a6E4",
+    "protocol": "PD"
+  },
+  ".l2": {
+    "chainId": 10,
+    "address": "0x9A7657d1593032C75d70950707870c3cC7ca45DC",
+    "protocol": "PD"
+  },
+  ".meow": {
+    "chainId": 55244,
+    "address": "0x4087fb91A1fBdef05761C02714335D232a2Bf3a1",
+    "protocol": "PD"
+  },
+  ".misie": {
+    "chainId": 42161,
+    "address": "0x526Ff108F5d422d0e1d6650E2Bc015BBE1fdb058",
+    "protocol": "PD"
+  },
+  ".nft": {
+    "chainId": 1,
+    "protocol": "UD"
+  },
+  ".op": {
+    "chainId": 10,
+    "address": "0xC16aCAdf99E4540E6f4E6Da816fd6D2A2C6E1d4F",
+    "protocol": "PD"
+  },
+  ".optimism": {
+    "chainId": 10,
+    "address": "0xBca24d86e4Ad1e011278FaEFc4fF191a731411EC",
+    "protocol": "PD"
+  },
+  ".poly": {
+    "chainId": 137,
+    "address": "0x70Ac07C50131b7bb2c8Bd9466D8d2add30B7759f",
+    "protocol": "PD"
+  },
+  ".pool": {
+    "chainId": 10,
+    "address": "0xf2C9E463592BD440f0D422E944E5F95c79404586",
+    "protocol": "PD"
+  },
+  ".ppl": {
+    "chainId": 42161,
+    "address": "0xbC9d19e5f97a572f428F7292DBf3dc182Cc05C82",
+    "protocol": "PD"
+  },
+  ".punkangel": {
+    "chainId": 42161,
+    "address": "0xcC66213645474a7B61BAf95330D01e50789eaF4b",
+    "protocol": "PD"
+  },
+  ".safu": {
+    "chainId": 56,
+    "address": "0xBDACF94dDCAB51c39c2dD50BffEe60Bb8021949a",
+    "protocol": "PD"
+  },
+  ".satrap": {
+    "chainId": 19,
+    "address": "0xeFBE0b46649B7A0F1e1D49CCa98aD9CF6bcFB096",
+    "protocol": "PD"
+  },
+  ".scrolly": {
+    "chainId": 534352,
+    "address": "0xc2C543D39426bfd1dB66bBde2Dd9E4a5c7212876",
+    "protocol": "PD"
+  },
+  ".sgb": {
+    "chainId": 19,
+    "address": "0xBDACF94dDCAB51c39c2dD50BffEe60Bb8021949a",
+    "protocol": "PD"
+  },
+  ".smol": {
+    "chainId": 42161,
+    "address": "0xE0d972817e94c5FF9BDc49a63d8927A0bA833E4f",
+    "protocol": "PD"
+  },
+  ".spartan": {
+    "chainId": 10,
+    "address": "0x3490C9817C45A2a394b11A3807f58a8325235aE0",
+    "protocol": "PD"
+  },
+  ".wagmi": {
+    "chainId": 10,
+    "address": "0xC3E8922657686EC63eaaa9FC1Fe06826802e7e0f",
+    "protocol": "PD"
+  },
+  ".wallet": {
+    "chainId": 1,
+    "protocol": "UD"
+  },
+  ".wildbunch": {
+    "chainId": 1,
+    "address": "0xaa9E5Ade68C9C3Ea967Dc5dde731fd1f797152Cb",
+    "protocol": "PD"
+  },
+  ".x": {
+    "chainId": 1,
+    "protocol": "UD"
+  },
+  ".xdai": {
+    "chainId": 100,
+    "address": "0xbca24d86e4ad1e011278faefc4ff191a731411ec",
+    "protocol": "PD"
+  },
+  ".888": {
+    "chainId": 1,
+    "protocol": "UD"
+  }
+}
