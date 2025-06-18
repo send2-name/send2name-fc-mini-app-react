@@ -125,17 +125,17 @@ const Navbar: React.FC = () => {
             <div className="offcanvas-body">
               <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
                 <li className="nav-item mb-4">
-                  <Link to="/" className="btn btn-primary" onClick={handleClose}>Home</Link>
+                  <Link to="/" className="btn btn-primary btn-lg" onClick={handleClose}>Home</Link>
                 </li>
                 <li className="nav-item mb-4">
-                  <Link to="/about" className="btn btn-primary" onClick={handleClose}>About</Link>
+                  <Link to="/about" className="btn btn-primary btn-lg" onClick={handleClose}>About</Link>
                 </li>
 
                 {isConnected && (
                   <>
                     <li className="nav-item dropdown mb-4">
                       <button 
-                        className="btn btn-primary dropdown-toggle network-dropdown" 
+                        className="btn btn-primary btn-lg dropdown-toggle network-dropdown" 
                         data-bs-toggle="dropdown" 
                         type="button" 
                         aria-haspopup="true" 
@@ -159,7 +159,7 @@ const Navbar: React.FC = () => {
 
                     <li className="nav-item dropdown mb-4">
                       <button 
-                        className="btn btn-primary dropdown-toggle" 
+                        className="btn btn-primary btn-lg dropdown-toggle" 
                         data-bs-toggle="dropdown" 
                         type="button" 
                         aria-haspopup="true" 
@@ -196,14 +196,14 @@ const Navbar: React.FC = () => {
                   <li className="nav-item mb-4">
                     <ConnectButton 
                       onConnect={handleClose}
-                      className="btn btn-primary"
+                      className="btn btn-primary btn-lg"
                     />
                   </li>
                 )}
 
                 <li className="nav-item mb-4">
                   <button 
-                    className="btn btn-success" 
+                    className="btn btn-success btn-lg" 
                     onClick={handleAddFavorite}
                   >
                     Add to favorites
@@ -212,7 +212,7 @@ const Navbar: React.FC = () => {
 
                 <li className="nav-item mb-4">
                   <button 
-                    className="btn btn-info" 
+                    className="btn btn-info btn-lg" 
                     onClick={handleShare}
                   >
                     Share on Farcaster
@@ -220,7 +220,7 @@ const Navbar: React.FC = () => {
                 </li>
 
                 <li className="nav-item mb-4">
-                  <button className="btn btn-warning" onClick={handleClose}>Close menu</button>
+                  <button className="btn btn-warning btn-lg" onClick={handleClose}>Close menu</button>
                 </li>
               </ul>
             </div>
