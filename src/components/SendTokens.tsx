@@ -121,7 +121,8 @@ export default function SendTokens() {
       }
     } catch (error) {
       console.error(error);
-      setStatus(error instanceof Error ? error.message : 'An error occurred');
+      setStatus(formatErrorMessage(error));
+    } finally {
       setWaiting(false);
     }
   };
@@ -154,7 +155,7 @@ export default function SendTokens() {
       }
     } catch (error) {
       console.error(error);
-      setStatus(error instanceof Error ? error.message : 'An error occurred');
+      setStatus(formatErrorMessage(error));
     } finally {
       setWaiting(false);
     }
@@ -186,7 +187,7 @@ export default function SendTokens() {
       }
     } catch (error) {
       console.error(error);
-      setStatus(error instanceof Error ? error.message : 'An error occurred');
+      setStatus(formatErrorMessage(error));
     } finally {
       setWaiting(false);
     }
@@ -197,6 +198,16 @@ export default function SendTokens() {
       return Number(tokenBalance).toFixed(2);
     }
     return Number(tokenBalance).toFixed(4);
+  };
+
+  const formatErrorMessage = (error: unknown): string => {
+    const errorMessage = error instanceof Error ? error.message : 'An error occurred';
+    
+    if (errorMessage.startsWith('User rejected the request')) {
+      return 'User rejected the request. Please try again.';
+    }
+    
+    return errorMessage;
   };
 
   return (
@@ -319,14 +330,14 @@ export default function SendTokens() {
                 onClick={handleSend}
               >
                 {waiting ? (
-                  <span className="spinner-border spinner-border-sm" role="status" aria-hidden="true" />
+                  <span className="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true" />
                 ) : null}
                 Send tokens
               </button>
 
               {/* Status Message */}
               {status && (
-                <p className="mt-3 mb-0" style={{ color: status.includes('Successfully') ? 'green' : 'red' }}>
+                <p className="mt-3 mb-0">
                   {status}
                 </p>
               )}

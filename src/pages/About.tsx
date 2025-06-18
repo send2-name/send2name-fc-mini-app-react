@@ -1,6 +1,6 @@
 function About() {
   return (
-    <div>
+    <div className="about-page">
       <h1>About Send2.name</h1>
       <div>
         <p>Send2.name is a web3 app that allows you to send tokens to any supported web3 domain name.</p>

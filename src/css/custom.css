@@ -43,11 +43,53 @@
   border-bottom-left-radius: 0 !important;
 }
 
+/* About page styling for better mobile readability */
+.about-page h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.about-page p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.about-page ul {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.about-page li {
+  margin-bottom: 0.5rem;
+}
+
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
   .balances-card, .send-tokens-card {
     width: 100%;
     margin: 5px;
     margin-top: 15px;
+  }
+  
+  /* Mobile-specific About page styling */
+  .about-page h1 {
+    font-size: 2rem;
+    margin-bottom: 1.25rem;
+  }
+  
+  .about-page p {
+    font-size: 1.2rem;
+    line-height: 1.7;
+    margin-bottom: 1.25rem;
+  }
+  
+  .about-page ul {
+    font-size: 1.2rem;
+    line-height: 1.7;
+  }
+  
+  .about-page li {
+    margin-bottom: 0.75rem;
   }
 }
