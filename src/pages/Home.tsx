@@ -1,5 +1,5 @@
 import SendTokens from '../components/SendTokens';
-import Balance from '../components/balance';
+import Balance from '../components/Balance';
 
 function Home() {
   return (
