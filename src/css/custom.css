@@ -38,6 +38,11 @@
   --bs-table-accent-bg: none;
 }
 
+.token-dropdown-btn {
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+}
+
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
   .balances-card, .send-tokens-card {

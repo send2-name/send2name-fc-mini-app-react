@@ -266,9 +266,8 @@ export default function SendTokens() {
                   placeholder="0.0" 
                 />
 
-                <div className="dropdown">
                   <button 
-                    className="btn btn-dark btn-lg dropdown-toggle" 
+                    className="btn btn-dark btn-lg dropdown-toggle token-dropdown-btn" 
                     type="button" 
                     data-bs-toggle="dropdown" 
                     aria-expanded="false"
@@ -297,7 +296,7 @@ export default function SendTokens() {
                       ))}
                     </div>
                   </div>
-                </div>
+                
               </div>
 
               {/* Balance Display */}
