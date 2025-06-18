@@ -1,1 +1,10 @@
-{}
+{
+  "frame": {
+    "version": "1",
+    "name": "Send2.name",
+    "homeUrl": "https://fc.send2.name",
+    "iconUrl": "https://send2.name/android-chrome-512x512.png",
+    "splashImageUrl": "https://send2.name/android-chrome-512x512.png",
+    "splashBackgroundColor": "#000000"
+  }
+}

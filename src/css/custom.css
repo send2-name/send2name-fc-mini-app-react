@@ -34,6 +34,10 @@
   cursor: pointer;
 }
 
+.table {
+  --bs-table-accent-bg: none;
+}
+
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
   .balances-card, .send-tokens-card {
