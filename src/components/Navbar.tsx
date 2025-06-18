@@ -101,6 +101,9 @@ const Navbar: React.FC = () => {
             <div className="offcanvas-body">
               <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
                 <li className="nav-item mb-4">
+                  <Link to="/" className="btn btn-primary" onClick={handleClose}>Home</Link>
+                </li>
+                <li className="nav-item mb-4">
                   <Link to="/about" className="btn btn-primary" onClick={handleClose}>About</Link>
                 </li>
 
