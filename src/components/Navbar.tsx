@@ -148,7 +148,7 @@ const Navbar: React.FC = () => {
                         {chains.map((chain) => (
                           <span 
                             key={chain.id}
-                            className="dropdown-item"
+                            className="dropdown-item fs-5"
                             onClick={() => switchChain({ chainId: chain.id as SupportedChainId })}
                           >
                             {chain.name}
@@ -175,18 +175,18 @@ const Navbar: React.FC = () => {
                           target="_blank"
                           rel="noopener noreferrer"
                         >
-                          <span className="dropdown-item">
+                          <span className="dropdown-item fs-5">
                             {getShortAddress()}
                           </span>
                         </a>
                         
                         {getUserBalance() && (
-                          <span className="dropdown-item">
+                          <span className="dropdown-item fs-5">
                             {getUserBalance()} {getNativeCurrency()}
                           </span>
                         )}
 
-                        <span className="dropdown-item" onClick={handleDisconnect}>Disconnect</span>
+                        <span className="dropdown-item fs-5" onClick={handleDisconnect}>Disconnect</span>
                       </div>
                     </li>
                   </>
