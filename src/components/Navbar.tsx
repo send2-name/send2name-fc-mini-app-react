@@ -47,6 +47,17 @@ const Navbar: React.FC = () => {
     }
   };
 
+  const handleShare = async () => {
+    try {
+      await sdk.actions.composeCast({
+        text: "Check out Send2.name - A Mini App to send tokens to any web3 domain name! 💸",
+        embeds: [window.location.href]
+      });
+    } catch (err) {
+      console.error('Error sharing:', err);
+    }
+  };
+
   const getShortAddress = () => {
     if (address) {
       return `${address.slice(0, 6)}...${address.slice(-4)}`;
@@ -200,6 +211,15 @@ const Navbar: React.FC = () => {
                     onClick={handleAddFavorite}
                   >
                     Add to favorites
+                  </button>
+                </li>
+
+                <li className="nav-item mb-4">
+                  <button 
+                    className="btn btn-info" 
+                    onClick={handleShare}
+                  >
+                    Share on Farcaster
                   </button>
                 </li>
 
