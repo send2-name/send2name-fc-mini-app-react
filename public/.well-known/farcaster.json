@@ -1,7 +1,12 @@
 {
+  "accountAssociation": {
+    "header": "eyJmaWQiOjExMjk5LCJ0eXBlIjoiY3VzdG9keSIsImtleSI6IjB4YjYyOTViQWU4OWNlOTAwZDNCOUIyZDA5ODBGZkI5NDQwZjVDZjhCRiJ9",
+    "payload": "eyJkb21haW4iOiJmYy5zZW5kMi5uYW1lIn0",
+    "signature": "MHg2MWIwZDI0N2M4OGM0ODQ0MTU2OWJiY2NhOTYwNmFhMWRkMWEzMGZkODQwYjFlYzNmMzc5ZGQ5ZmNhOTBkOTA3MDc5ZGU5MTdjZGFkM2NiY2E5MjMwZTUzNmFlMjQyYTRiNDI5NGMwOTIwNDMxOTdlYTc4YjJkMWNhN2ZkYmE4MTFj"
+  },
   "frame": {
     "version": "1",
-    "name": "Send2.name",
+    "name": "Send2.name | Send tokens to any web3 name",
     "homeUrl": "https://fc.send2.name",
     "iconUrl": "https://fc.send2.name/img/share.png",
     "splashImageUrl": "https://fc.send2.name/img/logo-200.png",
