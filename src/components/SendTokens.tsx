@@ -15,7 +15,7 @@ type Tokens = {
   [chainId: number]: TokenAddresses;
 };
 
-export const SendTokens = () => {
+export default function SendTokens() {
   const { address, isConnected } = useAccount();
   const { data: walletClient } = useWalletClient();
   const publicClient = usePublicClient();
@@ -337,4 +337,4 @@ export const SendTokens = () => {
       </div>
     </div>
   );
-};
+}

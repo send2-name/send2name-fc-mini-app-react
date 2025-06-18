@@ -1,4 +1,4 @@
-import { SendTokens } from '../components/SendTokens';
+import SendTokens from '../components/SendTokens';
 import Balance from '../components/balance';
 
 function Home() {
