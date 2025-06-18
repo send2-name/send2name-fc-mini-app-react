@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { useAccount, useBalance, useSwitchChain, useDisconnect } from 'wagmi';
 import { formatEther } from 'viem';
 import { Link } from 'react-router-dom';
+import { sdk } from '@farcaster/frame-sdk';
 import ConnectButton from './ConnectButton';
 import chains from '../data/chains.json';
 
@@ -22,12 +23,28 @@ const Navbar: React.FC = () => {
   });
   const { switchChain } = useSwitchChain();
   const { disconnect } = useDisconnect();
-
+  const [logs, setLogs] = useState<string[]>([]);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
   const handleDisconnect = () => {
     disconnect();
     handleClose();
+  };
+
+  const handleAddFavorite = async () => {
+    try {
+      const result = await sdk.actions.addFrame();
+      console.log('Add to favorites result:', result);
+      setLogs([...logs, `Add to favorites result: ${JSON.stringify(result)}`]);
+      // Handle the result based on what the SDK returns
+      if (result) {
+        console.log('Added to favorites!');
+        setLogs([...logs, 'Added to favorites!']);
+      }
+    } catch (err) {
+      console.error('Error adding frame:', err);
+      setLogs([...logs, `Error adding frame: ${err}`]);
+    }
   };
 
   const getShortAddress = () => {
@@ -176,6 +193,17 @@ const Navbar: React.FC = () => {
                     />
                   </li>
                 )}
+
+                <li className="nav-item mb-4">
+                  <button 
+                    className="btn btn-success" 
+                    onClick={handleAddFavorite}
+                  >
+                    Add to favorites
+                  </button>
+                </li>
+
+                <p>Logs: {JSON.stringify(logs)}</p>
 
                 <li className="nav-item mb-4">
                   <button className="btn btn-warning" onClick={handleClose}>Close menu</button>
