@@ -10,7 +10,7 @@
     "subtitle": "Send tokens to any web3 name",
     "buttonTitle": "Send tokens to any web3 name",
     "description": "Send2.name is an easy way to send tokens to any web3 domain name!",
-    "tags": ["send", "tokens", "web3", "domain", "name", "arbitrum", "base", "ethereum", "optimism", "polygon", "zora"],
+    "tags": ["send", "tokens", "transfer", "domain", "name"],
     "primaryCategory": "utility",
     "homeUrl": "https://fc.send2.name",
     "iconUrl": "https://fc.send2.name/img/logo-200.png",
