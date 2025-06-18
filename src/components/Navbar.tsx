@@ -23,7 +23,6 @@ const Navbar: React.FC = () => {
   });
   const { switchChain } = useSwitchChain();
   const { disconnect } = useDisconnect();
-  const [logs, setLogs] = useState<string[]>([]);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
   const handleDisconnect = () => {
@@ -35,15 +34,12 @@ const Navbar: React.FC = () => {
     try {
       const result = await sdk.actions.addFrame();
       console.log('Add to favorites result:', result);
-      setLogs([...logs, `Add to favorites result: ${JSON.stringify(result)}`]);
       // Handle the result based on what the SDK returns
       if (result) {
         console.log('Added to favorites!');
-        setLogs([...logs, 'Added to favorites!']);
       }
     } catch (err) {
       console.error('Error adding frame:', err);
-      setLogs([...logs, `Error adding frame: ${err}`]);
     }
   };
 
@@ -222,8 +218,6 @@ const Navbar: React.FC = () => {
                     Share on Farcaster
                   </button>
                 </li>
-
-                <p>Logs: {JSON.stringify(logs)}</p>
 
                 <li className="nav-item mb-4">
                   <button className="btn btn-warning" onClick={handleClose}>Close menu</button>
