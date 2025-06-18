@@ -250,7 +250,7 @@ export default function SendTokens() {
               <div className="mt-4">
                 <input 
                   value={receiver}
-                  onChange={(e) => setReceiver(e.target.value)}
+                  onChange={(e) => setReceiver(e.target.value.toLowerCase())}
                   className="form-control form-control-lg text-center"
                   placeholder="Receiver's domain name"
                 />
