@@ -34,5 +34,11 @@
     "name": "Zora",
     "nativeCurrency": "ETH",
     "blockExplorer": "https://explorer.zora.energy"
+  },
+  {
+    "id": 666666666,
+    "name": "Degen Chain",
+    "nativeCurrency": "DEGEN",
+    "blockExplorer": "https://explorer.degen.tips"
   }
 ]
