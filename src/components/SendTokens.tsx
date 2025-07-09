@@ -134,7 +134,7 @@ export default function SendTokens() {
       const tokenAddress = (tokens as Tokens)[chainId][selectedToken] as `0x${string}`;
       const valueWei = parseUnits(tokenAmount, selectedTokenDecimals);
 
-      const { request } = await publicClient.simulateContract({
+      const { request } = await (publicClient as any).simulateContract({
         address: tokenAddress,
         abi: erc20ABI,
         functionName: 'transfer',
@@ -172,7 +172,7 @@ export default function SendTokens() {
         value: valueWei,
         kzg: undefined,
         account: address,
-        chain: publicClient.chain
+        chain: publicClient.chain as any
       });
 
       setStatus('Transaction submitted. Waiting for confirmation...');
