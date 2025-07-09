@@ -13,7 +13,7 @@ const arbitrum = {
   },
   rpcUrls: {
     default: {
-      http: ["https://rpc.ankr.com/arbitrum"],
+      http: ["https://arbitrum.meowrpc.com"],
     },
   },
   blockExplorers: {
