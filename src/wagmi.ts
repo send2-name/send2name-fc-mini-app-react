@@ -41,9 +41,7 @@ const arbitrum = {
       blockCreated: 7654707,
     },
   },
-  fees: {
-    baseFeeMultiplier: 0,
-  },
+  //fees: {baseFeeMultiplier: 0,},
 } as const;
 
 export const config = createConfig({
