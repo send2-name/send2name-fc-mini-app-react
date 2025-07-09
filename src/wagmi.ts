@@ -20,12 +20,29 @@ const arbitrum = {
         "https://arbitrum-one.public.blastapi.io"
       ], 
     },
+    public: {
+      http: [
+        "https://arb1.arbitrum.io/rpc",
+        "https://arbitrum.meowrpc.com",
+        "https://rpc.ankr.com/arbitrum",
+        "https://arbitrum-one.public.blastapi.io"
+      ],
+    },
   },
   blockExplorers: {
     default: {
       name: "Arbiscan",
       url: "https://arbiscan.io",
     },
+  },
+  contracts: {
+    multicall3: {
+      address: "0xca11bde05977b3631167028862be2a173976ca11",
+      blockCreated: 7654707,
+    },
+  },
+  fees: {
+    baseFeeMultiplier: 0,
   },
 } as const;
 
