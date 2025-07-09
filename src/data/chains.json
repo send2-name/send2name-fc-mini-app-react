@@ -12,6 +12,12 @@
     "blockExplorer": "https://optimistic.etherscan.io"
   },
   {
+    "id": 100,
+    "name": "Gnosis Chain",
+    "nativeCurrency": "XDAI",
+    "blockExplorer": "https://gnosisscan.io"
+  },
+  {
     "id": 137,
     "name": "Polygon",
     "nativeCurrency": "POL",

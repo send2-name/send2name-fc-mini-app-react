@@ -1,18 +1,19 @@
 import { farcasterFrame } from "@farcaster/frame-wagmi-connector";
 import { http, createConfig } from "wagmi";
-import { base, arbitrum, mainnet, optimism, polygon, zora, degen } from "wagmi/chains";
+import { arbitrum, base, mainnet, optimism, polygon, zora, degen, gnosis } from "wagmi/chains";
 
 export const config = createConfig({
-  chains: [ base, arbitrum, mainnet, optimism, polygon, zora, degen ],
+  chains: [ arbitrum, base, degen, gnosis, mainnet, optimism, polygon, zora ],
   connectors: [farcasterFrame()],
   transports: {
-    [base.id]: http(),
     [arbitrum.id]: http(),
+    [base.id]: http(),
+    [degen.id]: http(),
+    [gnosis.id]: http(),
     [mainnet.id]: http(),
     [optimism.id]: http(),
     [polygon.id]: http(),
     [zora.id]: http(),
-    [degen.id]: http(),
   },
 });
 
