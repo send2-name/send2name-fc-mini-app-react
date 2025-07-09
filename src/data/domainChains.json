@@ -81,7 +81,7 @@
     "name": "Arbitrum",
     "nativeCurrency": "ETH",
     "blockExplorer": "https://arbiscan.io",
-    "rpc": "https://rpc.ankr.com/arbitrum"
+    "rpc": "https://arb1.arbitrum.io/rpc"
   },
   {
     "id": 42170,
